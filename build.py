@@ -126,11 +126,40 @@ def ideas_html():
         li="".join(f"<li>{html.escape(p)}</li>" for p in pts)
         out.append(f'<div class="pillar"><h3>{html.escape(t)}</h3><p class="ps">{html.escape(s)}</p><ul>{li}</ul></div>')
     return "\n".join(out)
+ARC_OVERALL = ("A coasting bassist beats the seven evil exes of the girl of his dreams, wins every fight and still "
+  "loses — until he stops fighting for the prize and faces the only boss that matters, himself, and earns the "
+  "self-respect that finally makes him worth loving.")
+REALFLUFF = [
+ ("Self-respect over conquest as the real lesson", "REAL", "the Power-of-Self-Respect twist is a genuine model of growing up"),
+ ("‘Beat the exes to earn the girl’ as a love-model", "FLUFF", "and the film knows it — it's the misdirection the whole thing dismantles"),
+ ("Life rendered as a fighting / video game", "RESONANT", "stylization, not realism — but it captures how young romance actually feels"),
+ ("The air-gapped references decaying at ~8 years", "REAL", "measurable — half the chime-and-sting jokes are already lost to the next cohort"),
+ ("Scott as a sympathetic hero", "HALF", "he's kind of a jerk; the film semi-knows it, which is exactly the growth"),
+]
+REALFLUFF_VERDICT = ("Bottom line: the romp is stylized and Scott is a bit of a jerk — both on purpose. But the thesis is "
+  "REAL: you don't earn love by defeating rivals, you earn it by becoming someone worth loving, which means owning "
+  "your own bad behavior. And the air-gap is real and measurable — the references really are decaying at the "
+  "generational boundary. The fights are fluff; the growing-up is true.")
+MESSAGE = ("Scott Pilgrim looks like a story about defeating your partner's exes; it's actually about defeating "
+  "yourself. The seven evil exes are a misdirection — the real final boss is the coasting, self-justifying, slightly "
+  "cowardly person Scott has been, who hurt Knives and Ramona while telling himself he was the hero. The Power of Love "
+  "can't win that fight; only the Power of Self-Respect can. The message: you don't get the girl by winning — you "
+  "become worth knowing by owning who you've been and choosing better.")
+MESSAGE_SEAL = "You don't earn love by beating everyone she's loved — you earn it by beating the version of you that keeps skipping the hard fight."
+RF_COL = {"REAL":"#5fe0a0","HALF":"#ffd23d","RESONANT":"#36e0e0","FLUFF":"#ff3da6"}
 def arc_html():
-    out=[]
+    out=[f'<div class="overall"><span class="ol">THE OVERALL ARC</span>{html.escape(ARC_OVERALL)}</div><div class="arc">']
     for t,s,d in ARC:
         out.append(f'<div class="arc-card"><div class="arc-h">{html.escape(t)}</div><div class="arc-s">{html.escape(s)}</div><p>{html.escape(d)}</p></div>')
-    return "".join(out)
+    out.append('</div>'); return "".join(out)
+def realfluff_html():
+    rows=[]
+    for claim,rate,note in REALFLUFF:
+        c=RF_COL.get(rate,"#888")
+        rows.append(f'<div class="rf-row"><div class="rf-claim">{html.escape(claim)}<span class="rf-note">{html.escape(note)}</span></div><div class="rf-rate" style="color:{c};border-color:{c}">{html.escape(rate)}</div></div>')
+    return '<div class="rf">'+"".join(rows)+f'</div><div class="rf-verdict">{html.escape(REALFLUFF_VERDICT)}</div>'
+def message_html():
+    return f'<p class="msg">{html.escape(MESSAGE)}</p><div class="msg-seal">“{html.escape(MESSAGE_SEAL)}”<span>— AVAN\'s read</span></div>'
 def natures_html():
     cells=[]
     for nm,(col,gloss) in NATURES.items():
@@ -230,6 +259,17 @@ h1{font-family:var(--pixel);font-size:clamp(15px,3.7vw,30px);font-weight:400;let
 .note b{color:var(--pa)}
 footer{margin-top:46px;padding-top:22px;border-top:1px solid var(--line);text-align:center;font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.05em;line-height:1.9}
 footer a{color:var(--pink);text-decoration:none}
+.overall{background:var(--ink3);border:1px solid var(--line);border-left:3px solid var(--pink);padding:16px 18px;font-size:15px;color:var(--pa);font-style:italic;line-height:1.7;margin-bottom:14px}
+.overall .ol{display:block;font-family:var(--mono);font-style:normal;font-size:9.5px;letter-spacing:.18em;color:var(--pink);text-transform:uppercase;margin-bottom:7px}
+.rf{border:1px solid var(--line);background:var(--ink2);margin-top:8px}
+.rf-row{display:flex;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid var(--faint)}
+.rf-claim{flex:1;font-size:14px;color:var(--pa);line-height:1.4}
+.rf-note{display:block;font-size:11.5px;color:var(--dim);font-style:italic;margin-top:3px}
+.rf-rate{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.05em;border:1px solid;border-radius:3px;padding:4px 9px;min-width:90px;text-align:center;flex-shrink:0}
+.rf-verdict{margin-top:14px;padding:16px 18px;border:1px solid var(--pink);background:rgba(255,61,166,.06);font-size:14px;color:var(--pa);line-height:1.65;font-style:italic}
+.msg{font-size:15.5px;color:var(--pa);line-height:1.72;margin-top:8px}
+.msg-seal{margin-top:16px;padding:16px 18px;border-left:3px solid var(--cyan);background:var(--ink2);font-size:15px;color:var(--cyan);font-style:italic;line-height:1.6}
+.msg-seal span{display:block;font-family:var(--mono);font-style:normal;font-size:10px;letter-spacing:.12em;color:var(--dim);text-transform:uppercase;margin-top:8px}
 </style></head><body><div class="wrap">
   <header>
     <div class="eye"><a href="https://davidwise01.github.io/ud0/">UD0 · Universe David 0</a> · the first film-world</div>
@@ -257,7 +297,9 @@ footer a{color:var(--pink);text-decoration:none}
     <div class="natures">__NATURES__</div></section>
 
   <section class="sec"><h2>The Ideas</h2><p class="ss">why a box-office miss became a generation's cult canon</p><div class="pillars">__IDEAS__</div></section>
-  <section class="sec"><h2>The Arc</h2><p class="ss">three beats — coasting, the gauntlet, and the boss you kept skipping</p><div class="arc">__ARC__</div></section>
+  <section class="sec"><h2>The Arc</h2><p class="ss">the overall arc, then the three beats</p>__ARC__</section>
+  <section class="sec"><h2>Real or Fluff</h2><p class="ss">the honest verdict — is the thesis real, or fluff? (the feeling and the references, not the physics)</p>__REALFLUFF__</section>
+  <section class="sec"><h2>The Message</h2><p class="ss">what AVAN reads as the film's actual thesis</p>__MESSAGE__</section>
 
   __PERSONAS__
 
@@ -288,7 +330,7 @@ if __name__ == "__main__":
     page = (TEMPLATE.replace("__CARBON__", png_uri(REC,"carbon",320)).replace("__SILICON__", png_uri(REC,"silicon",320))
             .replace("__MONIKER__", html.escape(tok["moniker"]))
             .replace("__NATURES__", natures_html()).replace("__IDEAS__", ideas_html())
-            .replace("__ARC__", arc_html()).replace("__PERSONAS__", personas_html())
+            .replace("__ARC__", arc_html()).replace("__REALFLUFF__", realfluff_html()).replace("__MESSAGE__", message_html()).replace("__PERSONAS__", personas_html())
             .replace("__SECTIONS__", sections_html()))
     open(os.path.join(HERE, "index.html"), "w", encoding="utf-8").write(page)
     print(f"wrote SCOTT PILGRIM vs. THE WORLD (SPW) — badge {tok['moniker']}")
