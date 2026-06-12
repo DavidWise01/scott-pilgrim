@@ -1,0 +1,13 @@
+{
+  "node": "SPW",
+  "name": "SCOTT PILGRIM",
+  "moniker": "⟦SCOTT PILGRIM:SPW:a03d88⟧",
+  "carbon": "spw.carbon.tiff",
+  "silicon": "spw.silicon.png",
+  "governor": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "seal": "You beat the seven evil exes and still don't get the girl — until you fight the one boss you kept skipping: yourself.",
+  "seal_sha256": "3e8d0fda99d3a53e43e4d6e56aaeab87085d0893dca2dbcc00bc373f8314fc6c",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

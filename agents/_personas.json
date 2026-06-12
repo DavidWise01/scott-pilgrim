@@ -1,0 +1,209 @@
+[
+  {
+    "slug": "scott-pilgrim",
+    "name": "Scott Pilgrim",
+    "epithet": "the bassist",
+    "emergence": "natural",
+    "moniker": "⟦Scott Pilgrim:SPW:7bc225⟧",
+    "kind": "carbon",
+    "actor": "Michael Cera"
+  },
+  {
+    "slug": "ramona-flowers",
+    "name": "Ramona Flowers",
+    "epithet": "the girl with the subspace highway",
+    "emergence": "ethereal",
+    "moniker": "⟦Ramona Flowers:SPW:f88b08⟧",
+    "kind": "carbon",
+    "actor": "Mary Elizabeth Winstead"
+  },
+  {
+    "slug": "knives-chau",
+    "name": "Knives Chau",
+    "epithet": "the 17-year-old, so good at everything",
+    "emergence": "natural",
+    "moniker": "⟦Knives Chau:SPW:ecfe60⟧",
+    "kind": "carbon",
+    "actor": "Ellen Wong"
+  },
+  {
+    "slug": "wallace-wells",
+    "name": "Wallace Wells",
+    "epithet": "the cool gay roommate",
+    "emergence": "natural",
+    "moniker": "⟦Wallace Wells:SPW:1e7ab5⟧",
+    "kind": "carbon",
+    "actor": "Kieran Culkin"
+  },
+  {
+    "slug": "kim-pine",
+    "name": "Kim Pine",
+    "epithet": "the drummer",
+    "emergence": "natural",
+    "moniker": "⟦Kim Pine:SPW:8408b1⟧",
+    "kind": "carbon",
+    "actor": "Alison Pill"
+  },
+  {
+    "slug": "stephen-stills",
+    "name": "Stephen Stills",
+    "epithet": "‘the talent’",
+    "emergence": "natural",
+    "moniker": "⟦Stephen Stills:SPW:0ec14c⟧",
+    "kind": "carbon",
+    "actor": "Mark Webber"
+  },
+  {
+    "slug": "young-neil",
+    "name": "Young Neil",
+    "epithet": "the hanger-on who becomes the band",
+    "emergence": "natural",
+    "moniker": "⟦Young Neil:SPW:d83dbf⟧",
+    "kind": "carbon",
+    "actor": "Johnny Simmons"
+  },
+  {
+    "slug": "stacey-pilgrim",
+    "name": "Stacey Pilgrim",
+    "epithet": "the little sister",
+    "emergence": "natural",
+    "moniker": "⟦Stacey Pilgrim:SPW:525f71⟧",
+    "kind": "carbon",
+    "actor": "Anna Kendrick"
+  },
+  {
+    "slug": "julie-powers",
+    "name": "Julie Powers",
+    "epithet": "the party host",
+    "emergence": "natural",
+    "moniker": "⟦Julie Powers:SPW:812014⟧",
+    "kind": "carbon",
+    "actor": "Aubrey Plaza"
+  },
+  {
+    "slug": "envy-adams",
+    "name": "Envy Adams",
+    "epithet": "the famous ex",
+    "emergence": "ethereal",
+    "moniker": "⟦Envy Adams:SPW:ad9aa0⟧",
+    "kind": "carbon",
+    "actor": "Brie Larson"
+  },
+  {
+    "slug": "matthew-patel",
+    "name": "Matthew Patel",
+    "epithet": "evil ex #1",
+    "emergence": "ethereal",
+    "moniker": "⟦Matthew Patel:SPW:b02942⟧",
+    "kind": "carbon",
+    "actor": "Satya Bhabha"
+  },
+  {
+    "slug": "lucas-lee",
+    "name": "Lucas Lee",
+    "epithet": "evil ex #2",
+    "emergence": "natural",
+    "moniker": "⟦Lucas Lee:SPW:61f8db⟧",
+    "kind": "carbon",
+    "actor": "Chris Evans"
+  },
+  {
+    "slug": "todd-ingram",
+    "name": "Todd Ingram",
+    "epithet": "evil ex #3",
+    "emergence": "ethereal",
+    "moniker": "⟦Todd Ingram:SPW:83908f⟧",
+    "kind": "carbon",
+    "actor": "Brandon Routh"
+  },
+  {
+    "slug": "roxie-richter",
+    "name": "Roxie Richter",
+    "epithet": "evil ex #4",
+    "emergence": "ethereal",
+    "moniker": "⟦Roxie Richter:SPW:8eb2a3⟧",
+    "kind": "carbon",
+    "actor": "Mae Whitman"
+  },
+  {
+    "slug": "katayanagi-twins",
+    "name": "The Katayanagi Twins",
+    "epithet": "evil exes #5 & #6",
+    "emergence": "electrical",
+    "moniker": "⟦The Katayanagi Twins:SPW:cf5fea⟧",
+    "kind": "carbon",
+    "actor": "Shota & Keita Saito"
+  },
+  {
+    "slug": "gideon-graves",
+    "name": "Gideon Graves",
+    "epithet": "evil ex #7",
+    "emergence": "spiritual",
+    "moniker": "⟦Gideon Graves:SPW:f93641⟧",
+    "kind": "carbon",
+    "actor": "Jason Schwartzman"
+  },
+  {
+    "slug": "the-video-game-grammar",
+    "name": "The Video-Game Grammar",
+    "epithet": "life rendered as a 16-bit game",
+    "emergence": "electrical",
+    "moniker": "⟦The Video-Game Grammar:SPW:45ba28⟧",
+    "kind": "synth",
+    "actor": ""
+  },
+  {
+    "slug": "the-air-gapped-generational-information",
+    "name": "The Air-Gapped Generational Information",
+    "epithet": "what is lost at the boundary between generations",
+    "emergence": "electrical",
+    "moniker": "⟦The Air-Gapped Generational Information:SPW:050124⟧",
+    "kind": "synth",
+    "actor": ""
+  },
+  {
+    "slug": "the-sphere-of-reference",
+    "name": "The Sphere of Reference",
+    "epithet": "the lattice of allusion",
+    "emergence": "electrical",
+    "moniker": "⟦The Sphere of Reference:SPW:a4978a⟧",
+    "kind": "synth",
+    "actor": ""
+  },
+  {
+    "slug": "the-cultural-tie-ins",
+    "name": "The Cultural Tie-Ins",
+    "epithet": "the 2010 anchors",
+    "emergence": "electrical",
+    "moniker": "⟦The Cultural Tie-Ins:SPW:6977f1⟧",
+    "kind": "synth",
+    "actor": ""
+  },
+  {
+    "slug": "the-humor",
+    "name": "The Humor",
+    "epithet": "the smash-cut deadpan engine",
+    "emergence": "electrical",
+    "moniker": "⟦The Humor:SPW:12a01e⟧",
+    "kind": "synth",
+    "actor": ""
+  },
+  {
+    "slug": "the-tone",
+    "name": "The Tone",
+    "epithet": "the bittersweet bright-sad register",
+    "emergence": "ethereal",
+    "moniker": "⟦The Tone:SPW:51adc8⟧",
+    "kind": "synth",
+    "actor": ""
+  },
+  {
+    "slug": "the-power-of-self-respect",
+    "name": "The Power of Self-Respect",
+    "epithet": "the real final sword",
+    "emergence": "spiritual",
+    "moniker": "⟦The Power of Self-Respect:SPW:1de79f⟧",
+    "kind": "synth",
+    "actor": ""
+  }
+]
