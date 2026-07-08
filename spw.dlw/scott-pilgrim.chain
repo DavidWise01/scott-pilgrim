@@ -1,0 +1,9 @@
+ROOT0-DLW-CHAIN-v1
+index : 677
+slug  : scott-pilgrim
+seal  : 3e8d0fda99d3a53e43e4d6e56aaeab87085d0893dca2dbcc00bc373f8314fc6c
+prev  : 625f1c14fef28a0442c40522e298ab15d685d0bdd7dd58b2b5930a39e811a01f
+link  : e64edb9f967e26ca9f509d6b623f603db0104917dd1b1ad68a1f26f765ef7711
+head  : 3447d3a0533aaf1e29a8bdc67a9774884fb3ae9dbc8a17064b7a008ca3c4ec90
+
+— the tether: link = sha256(index|slug|seal|prev). the chain head commits to the whole corpus.
